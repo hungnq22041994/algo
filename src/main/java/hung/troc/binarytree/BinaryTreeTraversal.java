@@ -1,4 +1,4 @@
-package com.company.binarytree;
+package hung.troc.binarytree;
 
 /**
  * @author hung.nguyenquang

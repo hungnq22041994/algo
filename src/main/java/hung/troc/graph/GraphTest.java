@@ -1,4 +1,4 @@
-package com.company.graph;
+package hung.troc.graph;
 
 import org.junit.Test;
 

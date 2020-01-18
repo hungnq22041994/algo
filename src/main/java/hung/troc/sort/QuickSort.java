@@ -1,4 +1,4 @@
-package com.company.sort;
+package hung.troc.sort;
 
 import org.junit.Test;
 

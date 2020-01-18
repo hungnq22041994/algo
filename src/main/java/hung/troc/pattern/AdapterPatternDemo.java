@@ -1,4 +1,4 @@
-package com.company.pattern;
+package hung.troc.pattern;
 
 interface MediaPlayer {
     public void play(String audioType, String fileName);

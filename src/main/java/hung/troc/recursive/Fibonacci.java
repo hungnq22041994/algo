@@ -1,4 +1,4 @@
-package com.company.recursive;
+package hung.troc.recursive;
 
 /**
  * @author hung.nguyenquang
