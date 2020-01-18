@@ -1,17 +1,0 @@
-
-usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(†Ò΅Ϊόÿÿÿÿ8Ε‚άτ-
-_squid:UselessImportCheck"4Remove this unused import 'java.util.stream.Stream'.(σχ”8Ε‚άτ-
-_squid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Β΅Άδώÿÿÿÿ8Ε‚άτ-
-^squid:UselessImportCheck"3Remove this unused import 'java.io.BufferedReader'.(€ι²Ε8Ε‚άτ-
-Zsquid:UselessImportCheck	"/Remove this unused import 'java.nio.file.Path'.(Χ²κΒ8Ε‚άτ-
-Dsquid:S1659"!Declare "res" on a separate line.(ΙίΖ·ÿÿÿÿÿ8Ε‚άτ-
-[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(χ‰ξƒ8Ε‚άτ-
-`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªΊ»Ϊύÿÿÿÿ8Ε‚άτ-
-[squid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒό8Ε‚άτ-
-hsquid:UselessImportCheck"8Remove this unused import 'java.util.stream.Collectors'.(ΣσΊ΄ϊÿÿÿÿ8Ε‚άτ-
-[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Υλ±Δψÿÿÿÿ8Ε‚άτ-
-[squid:UselessImportCheck
-"0Remove this unused import 'java.nio.file.Paths'.(αθ°―8Ε‚άτ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ΠΝΚΚ8Ε‚άτ-
-Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Π¥Ε8Ε‚άτ-
