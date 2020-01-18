@@ -1,9 +1,6 @@
-package com.company;
+package com.company.graph;
 
 import org.junit.Test;
-
-import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * @author hung.nguyenquang

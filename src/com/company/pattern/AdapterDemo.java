@@ -1,4 +1,4 @@
-package com.company;
+package com.company.pattern;
 
 interface LightningPhone {
     void recharge();
