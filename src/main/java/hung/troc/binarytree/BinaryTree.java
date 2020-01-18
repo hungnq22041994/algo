@@ -51,20 +51,47 @@ public class BinaryTree {
     public void levelOrderTraversal() {
         LinkedList<Node> queue = new LinkedList<>();
         queue.offer(root);
+
+        while (true) {
+            int currentCount = queue.size();
+            if (currentCount == 0)
+                break;
+            while (currentCount > 0) {
+                Node currentNode = queue.poll();
+                System.out.print(currentNode + " ");
+                if (currentNode.left != null) {
+                    queue.offer(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    queue.offer(currentNode.right);
+                }
+                currentCount--;
+            }
+            System.out.println();
+        }
+    }
+
+    public void addNode(Node node) {
+        LinkedList<Node> queue = new LinkedList<>();
+        queue.offer(root);
         while (!queue.isEmpty()) {
             Node currentNode = queue.poll();
-            System.out.println(currentNode);
             if (currentNode.left != null) {
                 queue.offer(currentNode.left);
+            } else {
+                currentNode.left = node;
+                break;
             }
             if (currentNode.right != null) {
                 queue.offer(currentNode.right);
+            } else {
+                currentNode.right = node;
+                break;
             }
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
@@ -82,6 +109,12 @@ public class BinaryTree {
         tree.printPostOrder();
 
         System.out.println("\nLevel Order traversal of binary tree is ");
+        tree.levelOrderTraversal();
+
+        Node newNode = new Node(6);
+        tree.addNode(newNode);
+
+        System.out.println("\nLevel Order traversal of binary tree after adding node is ");
         tree.levelOrderTraversal();
     }
 }
