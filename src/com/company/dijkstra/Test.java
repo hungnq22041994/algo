@@ -5,7 +5,7 @@ package com.company.dijkstra;
  */
 public class Test {
 
-    @org.junit.Test
+    @Test
     public void test() {
         int V = 5;
         int source = 0;
