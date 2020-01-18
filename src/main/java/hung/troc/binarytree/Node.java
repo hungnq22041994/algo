@@ -11,4 +11,11 @@ public class Node {
         key = item;
         left = right = null;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "key=" + key +
+                '}';
+    }
 }

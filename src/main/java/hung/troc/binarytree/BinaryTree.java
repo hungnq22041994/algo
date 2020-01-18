@@ -1,5 +1,7 @@
 package hung.troc.binarytree;
 
+import java.util.LinkedList;
+
 /**
  * @author hung.nguyenquang
  */
@@ -46,6 +48,21 @@ public class BinaryTree {
         postOrderTraversal(root);
     }
 
+    public void levelOrderTraversal() {
+        LinkedList<Node> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node currentNode = queue.poll();
+            System.out.println(currentNode);
+            if (currentNode.left != null) {
+                queue.offer(currentNode.left);
+            }
+            if (currentNode.right != null) {
+                queue.offer(currentNode.right);
+            }
+        }
+    }
+
     public static void main(String[] args)
     {
         BinaryTree tree = new BinaryTree();
@@ -63,5 +80,8 @@ public class BinaryTree {
 
         System.out.println("\nPostorder traversal of binary tree is ");
         tree.printPostOrder();
+
+        System.out.println("\nLevel Order traversal of binary tree is ");
+        tree.levelOrderTraversal();
     }
 }
